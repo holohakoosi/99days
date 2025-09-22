@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>99 Nights in the Forest 攻略サイト</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- パスワード保護 -->
+<div id="login">
+  <h2>パスワードを入力</h2>
+  <input type="password" id="pwInput" placeholder="パスワード">
+  <button onclick="checkPassword()">ログイン</button>
+  <p id="msg" style="color:red;"></p>
+</div>
+
+<!-- 攻略サイト本体 -->
+<div id="content" style="display:none;">
+<header>
+  <h1>99 Nights in the Forest 攻略サイト</h1>
+  <nav>
+    <a href="#characters">キャラクター一覧</a>
+    <a href="#stages">ステージ攻略</a>
+    <a href="#memo">攻略メモ</a>
+  </nav>
+</header>
+
+<main>
+  <!-- キャラクター一覧 -->
+  <section id="characters">
+    <h2>キャラクター一覧</h2>
+    <ul id="characterList"></ul>
+  </section>
+
+  <!-- ステージ攻略 -->
+  <section id="stages">
+    <h2>ステージ攻略</h2>
+    <div id="stageContent"></div>
+  </section>
+
+  <!-- 攻略メモ -->
+  <section id="memo">
+    <h2>攻略メモ</h2>
+    <textarea id="memoInput" placeholder="ここにメモを書こう"></textarea>
+    <button id="saveMemo">保存</button>
+    <div id="memoList"></div>
+  </section>
+</main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
